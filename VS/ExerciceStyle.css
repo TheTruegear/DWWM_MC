@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+.Container1{
+    width: 1880px;
+    height: 900px;
+    background-color: rgb(219, 187, 145);
+    padding: 10px;
+    display: flex;
+}
+.Item1{
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    flex-direction: row;
+    display: flex;
+}
+.Item2{
+    background-color: red;
+    width: 1350px;
+    height: 250px;
+    flex-direction: row;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.Item3{
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    flex-direction: row;
+    display: flex;
+}

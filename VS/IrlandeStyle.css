@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(22, 58, 78);
+    font-family: 'Roboto', sans-serif;
+}
+div{
+    /* background-color: rgb(252, 229, 214); */
+    background-color: #fbf2d5;
+    margin-left: 475px;
+    margin-right: 458px;
+    padding-bottom: 100px;
+}
+h2{
+    color: orange;
+    margin-left: 75px;
+}
+h3{
+    color: green;
+    margin-left: 75px;
+}
+.P1{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+em{
+    margin-left: 75px;
+    color: rgb(33, 88, 77);
+    /* border-left: solid, 1px, rgb(33, 88, 77); */
+    display: inline-block;
+    border-top: solid, 1px black;
+}
+strong{
+    color: green;
+}
+ul{
+    font-weight: bold;
+    margin-left: 125px;
+}

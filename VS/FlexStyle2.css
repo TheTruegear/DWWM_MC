@@ -1,0 +1,29 @@
+.Bleu{
+    background-color: blue;
+    display: flex;
+    width: 2500px;
+    height: 800px;
+    padding: 10px;
+}
+.Orange{
+    background-color: orange;
+    width: 800px;
+    height: 200px;
+    align-content: flex-start;
+}
+.Gris{
+    background-color: grey;
+    width: 200px;
+    height: 600px;
+}
+.Jaune{
+    background-color: rgb(255, 230, 0);
+    width: 600px;
+    height: 600px;
+}
+.Vert{
+    background-color: green;
+    width: 800px;
+    height: 200px;
+    align-content: flex-end;
+}

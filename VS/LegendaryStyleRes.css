@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(255, 239, 148);
+    font-family: 'Roboto', sans-serif;
+}
+.Parent {
+    position: relative;
+}
+
+.LogoHead {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+
+div {
+    margin-left: 450px;
+    margin-right: 443px;
+}
+
+.Bienv {
+    position: absolute;
+    top: 200px;
+    left: 375px;
+    color: rgb(255, 239, 148);
+}
+.Intro {
+    border-top: solid 1px rgb(255, 239, 148);
+    border-bottom: solid 1px rgb(255, 239, 148);
+    margin-left: 425px;
+    margin-right: 425px;
+    color: rgb(255, 239, 148);
+}
+
+p {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.Grise {
+    background: rgb(102, 102, 102);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.Blanche {
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.Bleu {
+    background: cyan;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.Avengers,
+.Star,
+.Woman {
+    margin-left: 90px;
+}
+
+.P1 {
+    color: rgb(255, 239, 148);
+}
+
+.Avengers {
+    color: aqua;
+}
+
+.Star {
+    color: black;
+}
+
+.P4,
+.Woman {
+    color: white;
+}
+.Noir{
+    background-color: black;
+    padding-top: 30px;
+    color: rgb(255, 239, 148);
+}
+strong{
+    color: white;
+}
+.LogoFoot{
+    padding-left: 90px;
+}
+/* Responsive */
+@media screen and (max-width:748px){
+    .Parent{
+        right: 575px;
+    }
+}
+@media screen and (max-width:360px){
+
+}
