@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(255, 166, 0);
+}
+/* Ce qui est drôle c'est que c'est si simple que j'ai pas eu à me faire chier à rendre ça responsive */
+div {
+    background-color: white;
+    margin: 30px;
+    padding: 10px;
+    padding-left: 50px;
+    height: 350px;
+}
+
+label {
+    border-bottom: solid black;
+}
+
+button {
+    background-color: blue;
+    color: white;
+}
