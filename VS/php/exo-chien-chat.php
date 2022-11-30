@@ -13,5 +13,8 @@
         $animal2 = array ("Nom"=>"Idefix", "Age"=>"5", "Type"=>"Chien");
         $tab=[$animal1, $animal2];
         ?>
+        <button class="btn btn-primary">Tous</button>
+        <button class="btn btn-primary">Chiens</button>
+        <button class="btn btn-primary">Chats</button>
     </body>
 </html>
