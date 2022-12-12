@@ -13,12 +13,13 @@ class Employe {
         $this->salaire = $salaire;
         $this->job = $job;
     }
-    public function getNom(){return $this->$nom;}
-    public function getPrenom(){return $this->$prenom;}
-    public function getSecu(){return $this->$secu;}
-    public function getSalaire(){return $this->$salaire;}
-    public function getJob(){return $this->$job;}
-
+    // getter
+    public function getNom(){return $this->nom;}
+    public function getPrenom(){return $this->prenom;}
+    public function getSecu(){return $this->secu;}
+    public function getSalaire(){return $this->salaire;}
+    public function getJob(){return $this->job;}
+    // setter
     public function setNom($nom){
         $this->nom = $nom;
     }
@@ -34,5 +35,11 @@ class Employe {
     public function setJob($job){
         $this->job = $job;
     }
+    // to string
+    public function __tostring(){
+        $afficher = "Nom et prénom de l'employé : " . $this->nom . " , " . $this->prenom . "\n";
+        $afficher = "Numéro de Sécurité Sociale de l'employé : " . $this->secu . "\n";
+        $afficher = "Salaire et job de l'employé : " . $this->salaire . " , " . $this->job . "\n";
+        return $afficher;
+    }
 }
-?>
