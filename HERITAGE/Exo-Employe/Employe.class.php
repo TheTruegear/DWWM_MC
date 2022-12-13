@@ -38,8 +38,8 @@ class Employe {
     // to string
     public function __tostring(){
         $afficher = "Nom et prénom de l'employé : " . $this->nom . " , " . $this->prenom . "\n";
-        $afficher = "Numéro de Sécurité Sociale de l'employé : " . $this->secu . "\n";
-        $afficher = "Salaire et job de l'employé : " . $this->salaire . " , " . $this->job . "\n";
+        $afficher .= "Numéro de Sécurité Sociale de l'employé : " . $this->secu . "\n";
+        $afficher .= "Salaire et job de l'employé : " . $this->salaire . " , " . $this->job . "\n";
         return $afficher;
     }
     public function EffectueSonJob(){
