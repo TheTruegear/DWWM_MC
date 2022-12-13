@@ -36,5 +36,7 @@ class Cadre extends Employe{
     public function setListe($listeEmploye){
         $this->listeEmploye = $listeEmploye;
     }
+    public function AugmenteUnSalaire($listeEmploye){
+    }
 }
 ?>

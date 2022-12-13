@@ -42,4 +42,7 @@ class Employe {
         $afficher = "Salaire et job de l'employé : " . $this->salaire . " , " . $this->job . "\n";
         return $afficher;
     }
+    public function EffectueSonJob(){
+        echo "Cette personne effectue son job.";
+    }
 }
