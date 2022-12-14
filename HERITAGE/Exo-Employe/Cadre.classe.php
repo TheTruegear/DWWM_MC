@@ -3,12 +3,8 @@ require "Employe.class.php";
 class Cadre extends Employe{ 
     private $listeEmploye; 
     public function __construct($nom,$prenom,$secu,$salaire,$job,$listeEmploye){
-        $this->nom = $nom;
-        $this->prenom = $prenom;
-        $this->secu = $secu;
-        $this->salaire = $salaire;
-        $this->job = $job;
         $this->listeEmploye = $listeEmploye;
+        parent::__construct($nom,$prenom,$secu,$salaire,$job);
     }
     // getter
     public function getNom(){return $this->nom;}
