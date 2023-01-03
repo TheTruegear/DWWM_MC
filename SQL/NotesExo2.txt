@@ -1,0 +1,6 @@
+1) SELECT COUNT(*) FROM arme
+2) SELECT COUNT(*) FROM personnage
+3) SELECT AVG(level) FROM personnage
+4) SELECT SUM(baseForce),SUM(baseAgi),SUM(baseIntel) FROM classe
+5) SELECT MIN(levelMin), MAX(levelMin) FROM arme
+6) SELECT SUM(baseForce + baseAgi + baseIntel) FROM classe

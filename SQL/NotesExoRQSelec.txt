@@ -1,0 +1,10 @@
+Exo3
+1) SELECT CONCAT(nom, surnom) FROM personnage
+2) SELECT CONCAT(nom, baseForce, baseAgi, baseIntel) FROM classe
+3) SELECT SUBSTR(nom, 1, 6) FROM personnage
+4) SELECT CONCAT(LEFT(nom,5)," ",LEFT(Description,20)) FROM classe
+
+STRING
+
+Exo4
+1) SELECT * FROM arme WHERE levelMIN>4
