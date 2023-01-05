@@ -8,3 +8,6 @@ STRING
 
 Exo4
 1) SELECT * FROM arme WHERE levelMIN>4
+2) SELECT * FROM arme WHERE degat<25
+3) SELECT nom,surnom FROM personnage WHERE level=10
+4) SELECT * FROM typearme WHERE estDistance=1
