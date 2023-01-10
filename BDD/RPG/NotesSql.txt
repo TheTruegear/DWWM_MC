@@ -61,3 +61,50 @@ Exo2
 4) SELECT personnage.nom, arme.nom, levelMin, degat, libelle, estDistance FROM personnage 
 INNER JOIN arme ON personnage.idArmeUtilise = arme.idTypeArme
 INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme
+
+Exo3
+1) SELECT personnage.nom, personnage.level, arme.nom, arme.levelMin 
+FROM arme 
+INNER JOIN dispose ON dispose.idArme = arme.idArme
+INNER JOIN personnage ON personnage.idPersonnage = dispose.idPersonnage
+2) SELECT arme.nom, arme.levelMin, arme.degat, typearme.libelle 
+FROM arme 
+INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme
+WHERE typearme.estDistance = 0
+3) SELECT personnage.nom, arme.nom AS `arme`, typearme.libelle AS `type`
+FROM personnage
+INNER JOIN dispose ON personnage.idPersonnage = dispose.idPersonnage
+INNER JOIN arme ON dispose.idArme = arme.idArme
+INNER JOIN typearme ON typearme.idTypeArme = arme.idTypeArme
+WHERE personnage.idClasse = 1
+
+Exo4
+1) SELECT personnage.nom AS `Perso`, personnage.idPersonnage, arme.nom, arme.idTypeArme FROM personnage
+INNER JOIN dispose ON dispose.idPersonnage = personnage.idPersonnage
+INNER JOIN arme ON dispose.idArme = arme.idArme
+WHERE level=10
+2) SELECT * FROM arme
+INNER JOIN dispose ON dispose.idArme = arme.idArme
+INNER JOIN personnage ON dispose.idPersonnage = personnage.idPersonnage
+WHERE personnage.level = 10
+ORDER BY personnage.idPersonnage
+3) SELECT AVG(degat) FROM arme
+INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme
+WHERE estDistance = 1
+4) SELECT * FROM personnage
+INNER JOIN dispose ON personnage.idPersonnage = dispose.idPersonnage
+INNER JOIN arme ON dispose.idArme = arme.idArme
+INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme
+WHERE typearme.libelle LIKE "a%"
+
+Exo5
+1) SELECT * FROM typearme LEFT JOIN arme ON typearme.idTypeArme = arme.idTypeArme
+2) SELECT * FROM arme
+RIGHT JOIN typearme ON typearme.idTypeArme = arme.idTypeArme
+3) SELECT * FROM arme
+RIGHT JOIN personnage ON arme.idArme = personnage.idArmeUtilise
+ORDER BY levelMin
+4) SELECT * FROM arme
+RIGHT JOIN dispose ON dispose.idArme = arme.idArme
+RIGHT JOIN personnage ON dispose.idPersonnage = personnage.idPersonnage
+ORDER BY arme.idArme
